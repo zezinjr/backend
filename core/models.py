@@ -160,4 +160,4 @@ class Sale(ModelBase):
     class Meta:
         db_table = 'sale'
 
-    #Mudança na feat/logs
+    #Mudança na feat/logs 123456
