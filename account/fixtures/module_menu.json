@@ -1,0 +1,86 @@
+[
+  {
+    "model": "account.modulemenu",
+    "pk": 1,
+    "fields": {
+      "root": null,
+      "module": 1,
+      "menu": 1,
+      "order": 1,
+      "has_divider": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "account.modulemenu",
+    "pk": 2,
+    "fields": {
+      "root": 1,
+      "module": 1,
+      "menu": 2,
+      "order": 2,
+      "has_divider": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "account.modulemenu",
+    "pk": 3,
+    "fields": {
+      "root": 1,
+      "module": 1,
+      "menu": 3,
+      "order": 2,
+      "has_divider": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "account.modulemenu",
+    "pk": 5,
+    "fields": {
+      "root": 5,
+      "module": 1,
+      "menu": 6,
+      "order": 4,
+      "has_divider": true,
+      "is_active": true
+    }
+  },
+  {
+    "model": "account.modulemenu",
+    "pk": 6,
+    "fields": {
+      "root": 5,
+      "module": 1,
+      "menu": 7,
+      "order": 4,
+      "has_divider": true,
+      "is_active": true
+    }
+  },
+   {
+    "model": "account.modulemenu",
+    "pk": 7,
+    "fields": {
+      "root": 5,
+      "module": 1,
+      "menu": 8,
+      "order": 4,
+      "has_divider": true,
+      "is_active": true
+    }
+  },
+   {
+    "model": "account.modulemenu",
+    "pk": 8,
+    "fields": {
+      "root": 5,
+      "module": 1,
+      "menu": 9,
+      "order": 4,
+      "has_divider": true,
+      "is_active": true
+    }
+  }
+]

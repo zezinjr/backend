@@ -1,0 +1,72 @@
+[
+  {
+    "model": "core.client",
+    "pk": 1,
+    "fields": {
+      "name": "Frank Renan",
+      "age": 25,
+      "rg": "29444187",
+      "cpf": "03204394221"
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 2,
+    "fields": {
+      "name": "Phelipe Matheus",
+      "age": 27,
+      "rg": "29444187",
+      "cpf": "03207394221"
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 3,
+    "fields": {
+      "name": "Larissa Gomes",
+      "age": 31,
+      "rg": "29877456",
+      "cpf": "03456789234"
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 4,
+    "fields": {
+      "name": "Bruno Carvalho",
+      "age": 22,
+      "rg": "29544321",
+      "cpf": "04567891234"
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 5,
+    "fields": {
+      "name": "Juliana Souza",
+      "age": 29,
+      "rg": "29700123",
+      "cpf": "05678912345"
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 6,
+    "fields": {
+      "name": "Marcos Silva",
+      "age": 35,
+      "rg": "29011234",
+      "cpf": "06789123456"
+    }
+  },
+  {
+    "model": "core.client",
+    "pk": 7,
+    "fields": {
+      "name": "Camila Ferreira",
+      "age": 28,
+      "rg": "29678901",
+      "cpf": "07891234567"
+    }
+  }
+]

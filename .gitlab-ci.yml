@@ -1,0 +1,65 @@
+# ANCHOR
+.login_gitlab: &login_gitlab
+  before_script:
+    - docker login -u=$CI_REGISTRY_USER -p=$CI_JOB_TOKEN $CI_REGISTRY
+
+# VARIABLES
+variables:
+  DOCKER_IMAGE: docker:28.1.1-dind
+  DOCKER_DRIVER: overlay2
+  BACKEND_DEPENDENCIES: $CI_REGISTRY_IMAGE:dependencies
+  BACKEND_DEVELOP: $CI_REGISTRY_IMAGE:develop
+
+# STAGES
+stages:
+  - unit-test
+  - image-dependencies
+  - build-image
+
+
+unit-test:
+  stage: unit-test
+  services:
+    - $BACKEND_DEVELOP
+    - name: postgres:15
+      alias: postgres
+  variables:
+    POSTGRES_DB: tecommerce_api_db
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+  image: $BACKEND_DEVELOP
+  script:
+    - python manage.py migrate
+    - python manage.py test
+  when: on_success
+
+image-dependencies:
+  <<: *login_gitlab
+  stage: image-dependencies
+  image: $DOCKER_IMAGE
+  services:
+    - $DOCKER_IMAGE
+  script:
+    - docker image build -t $BACKEND_DEPENDENCIES -f Dockerfile-dependencies .
+    - docker push $BACKEND_DEPENDENCIES
+    - echo push "Publish image $BACKEND_DEPENDENCIES"
+  when: on_success
+  rules:
+    - changes:
+        paths:
+          - Dockerfile-dependencies
+          - requirements.txt
+
+
+build-image:
+  <<: *login_gitlab
+  stage: build-image
+  image: $DOCKER_IMAGE
+  services:
+    - $DOCKER_IMAGE
+  script:
+    - EXTRA_ARGS="--build-arg image=$BACKEND_DEPENDENCIES"
+    - docker image build -t $BACKEND_DEVELOP $EXTRA_ARGS .
+    - docker push $BACKEND_DEVELOP
+    - echo "Publish image $BACKEND_DEVELOP"
+  when: on_success

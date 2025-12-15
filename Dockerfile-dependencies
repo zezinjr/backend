@@ -1,0 +1,20 @@
+FROM python:3.12.10-slim AS dependencies
+
+
+ENV APP_PATH=/usr/src/app
+ENV TIMEZONE='America/Manaus'
+WORKDIR $APP_PATH
+
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libpq-dev \
+    gcc \
+    && rm -rf /var/lib/apt/lists/*
+
+
+FROM dependencies AS application
+
+COPY requirements.txt $APP_PATH
+
+RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
+

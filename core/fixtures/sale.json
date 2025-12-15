@@ -1,0 +1,132 @@
+[
+  {
+    "model": "core.sale",
+    "pk": 1,
+    "fields": {
+      "nrf": "7899882307726",
+      "client": 1,
+      "employee": 2,
+      "product": 1
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 2,
+    "fields": {
+      "nrf": "7899881232307726",
+      "client": 2,
+      "employee": 1,
+      "product": 3
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 3,
+    "fields": {
+      "nrf": "8899882307726",
+      "client": 1,
+      "employee": 2,
+      "product": 3
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 4,
+    "fields": {
+      "nrf": "7890001112223",
+      "client": 3,
+      "employee": 4,
+      "product": 2
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 5,
+    "fields": {
+      "nrf": "7890001112224",
+      "client": 4,
+      "employee": 5,
+      "product": 5
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 6,
+    "fields": {
+      "nrf": "7890001112225",
+      "client": 5,
+      "employee": 6,
+      "product": 4
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 7,
+    "fields": {
+      "nrf": "7890001112226",
+      "client": 6,
+      "employee": 7,
+      "product": 6
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 8,
+    "fields": {
+      "nrf": "7890001112227",
+      "client": 2,
+      "employee": 8,
+      "product": 7
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 9,
+    "fields": {
+      "nrf": "7890001112228",
+      "client": 3,
+      "employee": 9,
+      "product": 9
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 10,
+    "fields": {
+      "nrf": "7890001112229",
+      "client": 1,
+      "employee": 10,
+      "product": 11
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 11,
+    "fields": {
+      "nrf": "7890001112230",
+      "client": 4,
+      "employee": 11,
+      "product": 8
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 12,
+    "fields": {
+      "nrf": "7890001112231",
+      "client": 5,
+      "employee": 12,
+      "product": 13
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 13,
+    "fields": {
+      "nrf": "7890001112232",
+      "client": 7,
+      "employee": 3,
+      "product": 10
+    }
+  }
+]

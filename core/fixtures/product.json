@@ -1,0 +1,106 @@
+[
+  {
+    "model": "core.product",
+    "pk": 1,
+    "fields": {
+      "description": "iPhone 13 Apple (5G) 128GB Tela 6.1\" iOS 15 - Preto",
+      "quantity": 50
+    }
+  },
+  {
+    "model": "core.product",
+    "pk": 2,
+    "fields": {
+      "description": "Smartphone Motorola G05 128GB Cinza Vegan Leather Tela 6.7\" Câmera 50MP 4GB RAM",
+      "quantity": 10
+    }
+  },
+  {
+    "model": "core.product",
+    "pk": 3,
+    "fields": {
+      "description": "Smartphone Motorola Edge 60 Fusion 5G 256GB 8GB RAM Cinza",
+      "quantity": 25
+    }
+  },
+  {
+    "model": "core.product",
+    "pk": 4,
+    "fields": {
+      "description": "Notebook Dell Inspiron 15 3000 Intel Core i5 8GB 256GB SSD Windows 11",
+      "quantity": 12
+    }
+  },
+  {
+    "model": "core.product",
+    "pk": 5,
+    "fields": {
+      "description": "Smart TV Samsung 50\" 4K UHD LED Tizen Wi-Fi Bluetooth HDR",
+      "quantity": 8
+    }
+  },
+  {
+    "model": "core.product",
+    "pk": 6,
+    "fields": {
+      "description": "Fone de Ouvido Bluetooth JBL Tune 510BT Preto",
+      "quantity": 30
+    }
+  },
+  {
+    "model": "core.product",
+    "pk": 7,
+    "fields": {
+      "description": "Tablet Samsung Galaxy Tab A9 64GB 4GB RAM Wi-Fi Android 13",
+      "quantity": 20
+    }
+  },
+  {
+    "model": "core.product",
+    "pk": 8,
+    "fields": {
+      "description": "Console PlayStation 5 Slim 1TB SSD com Mídia Física",
+      "quantity": 5
+    }
+  },
+  {
+    "model": "core.product",
+    "pk": 9,
+    "fields": {
+      "description": "Câmera GoPro HERO11 Black à prova d'água 27MP 5.3K",
+      "quantity": 7
+    }
+  },
+  {
+    "model": "core.product",
+    "pk": 10,
+    "fields": {
+      "description": "Monitor LG 29\" Ultrawide Full HD IPS HDMI DisplayPort",
+      "quantity": 14
+    }
+  },
+  {
+    "model": "core.product",
+    "pk": 11,
+    "fields": {
+      "description": "Mouse Gamer Logitech G203 RGB 8000 DPI",
+      "quantity": 40
+    }
+  },
+  {
+    "model": "core.product",
+    "pk": 12,
+    "fields": {
+      "description": "Teclado Mecânico Redragon Kumara RGB Switch Outemu Blue",
+      "quantity": 18
+    }
+  },
+  {
+    "model": "core.product",
+    "pk": 13,
+    "fields": {
+      "description": "Impressora Multifuncional HP DeskJet Ink Advantage 2774 Wi-Fi",
+      "quantity": 11
+    }
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "model": "core.employee",
+    "pk": 1,
+    "fields": {
+      "name": "Joel",
+      "registration": "123456"
+    }
+  },
+  {
+    "model": "core.employee",
+    "pk": 2,
+    "fields": {
+      "name": "Nayandra",
+      "registration": "65432132"
+    }
+  },
+  {
+    "model": "core.employee",
+    "pk": 3,
+    "fields": {
+      "name": "Ana Clara",
+      "registration": "78901234"
+    }
+  },
+  {
+    "model": "core.employee",
+    "pk": 4,
+    "fields": {
+      "name": "Carlos Eduardo",
+      "registration": "89012345"
+    }
+  },
+  {
+    "model": "core.employee",
+    "pk": 5,
+    "fields": {
+      "name": "Fernanda Lima",
+      "registration": "90123456"
+    }
+  },
+  {
+    "model": "core.employee",
+    "pk": 6,
+    "fields": {
+      "name": "Ricardo Alves",
+      "registration": "12349876"
+    }
+  },
+  {
+    "model": "core.employee",
+    "pk": 7,
+    "fields": {
+      "name": "Tatiane Ribeiro",
+      "registration": "23450987"
+    }
+  },
+  {
+    "model": "core.employee",
+    "pk": 8,
+    "fields": {
+      "name": "Vinícius Martins",
+      "registration": "34560198"
+    }
+  },
+  {
+    "model": "core.employee",
+    "pk": 9,
+    "fields": {
+      "name": "Bianca Ferreira",
+      "registration": "45671209"
+    }
+  },
+  {
+    "model": "core.employee",
+    "pk": 10,
+    "fields": {
+      "name": "Lucas Rocha",
+      "registration": "56782310"
+    }
+  },
+  {
+    "model": "core.employee",
+    "pk": 11,
+    "fields": {
+      "name": "Paula Mendes",
+      "registration": "67893421"
+    }
+  },
+  {
+    "model": "core.employee",
+    "pk": 12,
+    "fields": {
+      "name": "João Pedro",
+      "registration": "78904532"
+    }
+  }
+]

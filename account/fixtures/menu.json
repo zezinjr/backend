@@ -1,0 +1,80 @@
+[
+  {
+    "model": "account.menu",
+    "pk": 1,
+    "fields": {
+      "description": "Admin",
+      "icon": "fa-file-upload",
+      "route": null
+    }
+  },
+  {
+    "model": "account.menu",
+    "pk": 2,
+    "fields": {
+      "description": "Grupos",
+      "icon": "groups",
+      "font_set": "material-icons-outlined",
+      "route": "/account/group"
+    }
+  },
+  {
+    "model": "account.menu",
+    "pk": 3,
+    "fields": {
+      "description": "Usuários",
+      "font_set": "material-icons-outlined",
+      "icon": "person",
+      "route": "/account/user"
+    }
+  },
+  {
+    "model": "account.menu",
+    "pk": 5,
+    "fields": {
+      "description": "Tecommerce",
+      "icon": "",
+      "route": null
+    }
+  },
+  {
+    "model": "account.menu",
+    "pk": 6,
+    "fields": {
+      "description": "Clientes",
+      "font_set": "material-icons-outlined",
+      "icon": "person",
+      "route": "/tecommerce/client"
+    }
+  },
+  {
+    "model": "account.menu",
+    "pk": 7,
+    "fields": {
+      "description": "Funcionários",
+      "font_set": "material-icons-outlined",
+      "icon": "assignment_ind",
+      "route": "/tecommerce/employee"
+    }
+  },
+  {
+    "model": "account.menu",
+    "pk": 8,
+    "fields": {
+      "description": "Produtos",
+      "font_set": "material-icons-outlined",
+      "icon": "shopping_bag",
+      "route": "/tecommerce/product"
+    }
+  },
+  {
+    "model": "account.menu",
+    "pk": 9,
+    "fields": {
+      "description": "Vendas",
+      "font_set": "material-icons-outlined",
+      "icon": "point_of_sale",
+      "route": "/tecommerce/sale"
+    }
+  }
+]

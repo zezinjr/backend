@@ -1,0 +1,11 @@
+[
+  {
+    "model": "account.module",
+    "pk": 1,
+    "fields": {
+      "description": "access-control",
+      "icon": "fa-users",
+      "is_active": true
+    }
+  }
+]

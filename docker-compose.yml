@@ -1,0 +1,71 @@
+services:
+  postgres-compose:
+    container_name: postgres
+    restart: always
+    image: postgres
+    environment:
+      POSTGRES_DB: 'tecommerce_api_db'
+      POSTGRES_PASSWORD: 'postgres'
+      POSTGRES_USER: 'postgres'
+    ports:
+      - '5432:5432'
+    networks:
+      - postgres-compose-network
+
+  pgadmin-compose:
+    container_name: pgadmin
+    restart: always
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: 'frank.lima@fpf-etech.br'
+      PGADMIN_DEFAULT_PASSWORD: '123456'
+    ports:
+      - '6000:80'
+    depends_on:
+      - postgres-compose
+    networks:
+      - postgres-compose-network
+
+  api-compose:
+    container_name: api
+    image: franklima8/tecommerce-api:develop
+    restart: always
+    environment:
+      DB_ENGINE: 'django.db.backends.postgresql_psycopg2'
+      DB_NAME: 'tecommerce_api_db'
+      DB_HOST: 'postgres'
+      DB_PORT: 5432
+      DB_USER: 'postgres'
+      DB_PASSWORD: 'postgres'
+    command: /bin/sh -c "
+      python -u manage.py migrate \
+      && python manage.py loaddata ./account/fixtures/menu.json \
+      && python manage.py loaddata ./account/fixtures/module.json \
+      && python manage.py loaddata ./account/fixtures/module_menu.json \
+      && python manage.py loaddata ./core/fixtures/client.json \
+      && python manage.py loaddata ./core/fixtures/employee.json \
+      && python manage.py loaddata ./core/fixtures/product.json \
+      && python manage.py loaddata ./core/fixtures/sale.json \
+      && python -u production-server.py --port=8000"
+    ports:
+      - '8000:8000'
+    depends_on:
+      - postgres-compose
+    networks:
+      - postgres-compose-network
+
+
+  web-compose:
+    container_name: web
+    image: franklima8/tecommerce-web:develop
+    restart: always
+    ports:
+      - '80:80'
+    depends_on:
+      - api-compose
+    networks:
+      - postgres-compose-network
+
+networks:
+  postgres-compose-network:
+    driver: bridge
